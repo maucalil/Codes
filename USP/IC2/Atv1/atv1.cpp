@@ -12,7 +12,6 @@ typedef struct alunos {
 };
 
 // funções usadas no código com escopo depois da main
-void buffer_clear();
 void menu(int menu_counter);
 void cadastrar_alunos(alunos *aluno, int quantidade_alunos);
 void consultar_aluno(alunos *aluno, int alunos_cadastrados) ;
@@ -22,19 +21,17 @@ int main() {
 
     // inicialização das variáveis que serão utilizadas no programa
     alunos *aluno;
-    char option;
+    int option;
     int menu_counter = 0;
     menu(menu_counter);
     cin >> option;
-    buffer_clear(); // limpa o buffer do teclado para evitar erros na leitura
 
     int n = 0;
     
-    print_separador();
 
-    while (option != '3') { 
+    while (option != 3) { 
         switch(option) {
-            case '1': // caso o usuário escolheu a primeira opção
+            case 1: // caso o usuário escolheu a primeira opção
                 
                 /* verifica se é a primeira vez que o usuário escolheu cadastrar
                    um aluno, pois só será permitida essa ação 1 vez.
@@ -44,6 +41,7 @@ int main() {
                     menu(menu_counter);
                     break;
                 }
+                print_separador();
                 menu_counter++; // se entra nesse caso, a variável será 1 para saber que foi acessado
                 cout << "\nQuantos alunos deseja cadastrar? ";
                 cin >> n;
@@ -52,21 +50,21 @@ int main() {
                 cadastrar_alunos(aluno, n);
                 menu(menu_counter);
                 cin >> option;
-                buffer_clear();
+
                 break;
 
-            case '2': // caso o usuário escolha a 2 opção
+            case 2: // caso o usuário escolha a 2 opção
                 consultar_aluno(aluno, n);
                 menu(menu_counter);
                 cin >> option;
-                buffer_clear();
+
                 break;
 
             default: // caso o usuário não escolha nenhuma opção válida
                 cout << "\nPor favor, digite uma opção válida!\n";
                 menu(menu_counter);
                 cin >> option;
-                buffer_clear();
+
                 break;
         }    
     }
@@ -79,14 +77,6 @@ int main() {
     }
 
     return 0;
-}
-
-// função que limpa o buffer do teclado
-void buffer_clear() { 
-    int ch;
-    do {
-        ch = fgetc(stdin);
-    } while (ch != EOF && ch != '\n');
 }
 
 // função que exibe o menu para o usuário
@@ -129,7 +119,6 @@ void cadastrar_alunos(alunos *aluno, int quantidade_alunos) {
 
         cout << "Número USP:";
         cin >> aluno[i].num_usp;
-        buffer_clear();
 
         cout << "Nota da primeira prova:";
         cin >> aluno[i].p1;
@@ -147,6 +136,7 @@ void cadastrar_alunos(alunos *aluno, int quantidade_alunos) {
 void consultar_aluno(alunos* aluno, int alunos_cadastrados) {
 
     if (alunos_cadastrados == 0) {
+        print_separador();
         cout << "Nenhum aluno cadastrado." << endl;
     }
     else {
@@ -176,7 +166,3 @@ void consultar_aluno(alunos* aluno, int alunos_cadastrados) {
 void print_separador() {
     cout << "\n------------------------------------------------\n";
 }
-
-
-
-

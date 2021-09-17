@@ -1,12 +1,9 @@
-package Codes.USP.LPP.Cap4;
-// Fig. 2.1: Welcome1.java
-// Text-printing program.
+package Codes.USP.LPP.Cap3.a;
 
 import java.util.Scanner;
 
-public class Teste  
-{
-   // main method begins execution of Java application
+public class A {
+    
    public static void main( String[] args )
    {
        Scanner input = new Scanner( System.in );
@@ -19,4 +16,4 @@ public class Teste
            }
        }
    } // end method main
-} // end class Welcome1
+}

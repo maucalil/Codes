@@ -1,6 +1,6 @@
 // Fig. 6.11: Scope.java
 // Scope class demonstrates field and local variable scopes.
-
+package Codes.USP.LPP.Cap6;
 public class Scope
 {
    // field that is accessible to all methods of this class 

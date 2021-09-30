@@ -19,20 +19,23 @@ int main() {
 
     printf("\nIniciado o primeiro algoritimo:\n");
     tempo1 = clock();
-    prefixMedia1(X, n);
+    double* A1 = prefixMedia1(X, n);
     tempo2 = clock();
     printf("Primeiro algoritimo finalizado.");
     tempo_total = difftime(tempo2, tempo1) / CLOCKS_PER_SEC;
     printf("\nTempo total do primeiro algoritmo: %lf\n", tempo_total);
+    free(A1);
 
     printf("\nIniciado o segundo algoritimo:\n");
     tempo1 = clock();
-    prefixMedia2(X, n);
+    double* A2 = prefixMedia2(X, n);
     tempo2 = clock();
     printf("Segundo algoritimo finalizado.");
     tempo_total = difftime(tempo2, tempo1) / CLOCKS_PER_SEC;
     printf("\nTempo total do segundo algoritimo: %lf\n", tempo_total);
+    free(A2);
 
+    free(X);
     return 0;
 }
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class A {
     
-   public static void main( String[] args )
+   public static void testando()
    {
        Scanner input = new Scanner( System.in );
        System.out.print("Digite um número: ");

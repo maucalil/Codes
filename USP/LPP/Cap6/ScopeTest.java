@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap6;
+package Cap6;
 public class ScopeTest
 {
    // application starting point

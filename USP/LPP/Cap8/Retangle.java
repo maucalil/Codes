@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap8;
+package Cap8;
 
 public class Retangle {
     

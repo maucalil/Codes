@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap3.fig03_10_11;
+package Cap3.fig03_10_11;
 // Fig. 3.11: GradeBookTest.java
 // GradeBook constructor used to specify the course name at the 
 // time each GradeBook object is created.

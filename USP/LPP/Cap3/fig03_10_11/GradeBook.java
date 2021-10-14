@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap3.fig03_10_11;
+package Cap3.fig03_10_11;
 // Fig. 3.10: GradeBook.java
 // GradeBook class with a constructor to initialize the course name.
 

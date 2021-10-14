@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap7;
+package Cap7;
 
 public class Array {
 

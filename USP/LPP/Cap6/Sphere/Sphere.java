@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap6.Sphere;
+package Cap6.Sphere;
 
 import java.util.Scanner;
 

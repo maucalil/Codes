@@ -1,4 +1,4 @@
-package Codes.USP.LPP.HerAndPol;
+package HerAndPol;
 
 // Carro Camaro estende a classe Carro (Herança)
 public class Camaro extends Car {

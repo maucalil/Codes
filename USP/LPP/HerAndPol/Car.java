@@ -1,4 +1,4 @@
-package Codes.USP.LPP.HerAndPol;
+package HerAndPol;
 
 public class Car {
     private String model;

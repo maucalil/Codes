@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap1e2.fig02_01;
+package Cap1e2.fig02_01;
 // Fig. 2.1: Welcome1.java
 // Text-printing program.
 

@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap7.Duplicata;
+package Cap7.Duplicata;
 
 import java.util.Arrays;
 

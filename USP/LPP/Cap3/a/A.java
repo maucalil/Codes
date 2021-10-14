@@ -1,4 +1,4 @@
-package Codes.USP.LPP.Cap3.a;
+package Cap3.a;
 
 import java.util.Scanner;
 
